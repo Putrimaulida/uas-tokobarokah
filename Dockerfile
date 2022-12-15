@@ -16,3 +16,5 @@ RUN cd /app && \
     /usr/local/bin/composer install --ignore-platform-req=ext-gd
 
 RUN chown -R www-data: /app
+
+CMD sh /app/docker/startup.sh
